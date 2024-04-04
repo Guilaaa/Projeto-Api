@@ -1,2 +1,9 @@
 ATIVIDADE DE MOISES SOBRE APLICAÇÃO DE API
 API USADA NO PROJETO: OMDb, UMA API REST DE CATALOGAÇÃO DE FILMES
+
+Desenvolvido por:
+Giovanna
+Guilherme L.
+Isabelle
+João Victor
+Vitoria
