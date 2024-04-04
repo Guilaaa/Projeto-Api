@@ -6,14 +6,10 @@
 }
 body{
     background: rgb(175,179,183);
-    background: -moz-linear-gradient(180deg, rgba(175,179,183,1) 0%, rgba(45,74,83,1) 50%, rgba(13,31,35,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(175,179,183,1) 0%, rgba(45,74,83,1) 50%, rgba(13,31,35,1) 100%);
-    background: linear-gradient(180deg, rgba(175,179,183,1) 0%, rgba(45,74,83,1) 50%, rgba(13,31,35,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#afb3b7",endColorstr="#0d1f23",GradientType=1);
 }
 main{
-    min-width: 960px;
-    min-height: 100vh;
+    width: 960px;
+    height: 100vh;
     margin: 0 auto;    
     padding: 1.5rem;
 }
@@ -59,8 +55,8 @@ form button:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 div.item{
     text-align: center ;
@@ -129,12 +125,6 @@ ul{
     display: flex;
     position: absolute;
     justify-content: center;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.16);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.16);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.16);
-    margin-left: 50%;
-    transform: translate(-50%);
-
 }
 .docFil1{
     border: 2px solid white;
@@ -155,12 +145,22 @@ ul{
     background-color: transparent;
     color: #fff;
     text-align: center;
+    text-align: justify;
+}
+.docFil2 p{
+    padding: 30px;
+}
+/*
+.testeR{
+    background-color: #333;
+    height: 400px;
+    width: 1024px;
 }
 
 /*responsividade*/
-@media screen and (max-width: 390px) {
+@media (max-width: 390px) {
     body{
-        background-color: rgba(13,31,35,1);
+        background-color: rgb(175,179,183);
         background-size:  390px;
         background-repeat: no-repeat;
         color: #fff;
@@ -189,7 +189,7 @@ ul{
         max-width: 70%;
     }
 }
-@media screen and (min-width: 481px)and (max-width: 768px) {
+@media (min-width: 481px)and (max-width: 768px) {
     
     main{
         margin: 0;
@@ -212,33 +212,3 @@ ul{
     }
 }
 
-@media screen and (max-width: 1024px) {
-    main{
-        margin: 0;
-        padding: 0;
-        max-width: 1024px;
-    }
-    header{
-        max-width: 1024px;
-    }
-    nav, ul, li{
-        max-width: 100%;
-        justify-self: flex-end;
-    }
-    form{
-        width: 300px;
-        margin: 3px;
-    }
-    form input{
-        max-width: 70%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-
-}
-    text-align: justify;
-}
-.docFil2 p{
-    padding: 30px;
-}
