@@ -25,7 +25,7 @@ h1.titulo{
 }
 form{
     padding: 10px;
-    border: 1px solid #666;
+    border: 1px solid #333;
     border-radius: 20px;
     display: flex;
     width: 70%;
@@ -38,16 +38,20 @@ form input {
     border: none;
     outline: none;
     flex: 1;
+    
 }
+::-webkit-input-placeholder {
+    color: white;
+ }
 form button{
     padding: 5px 10px;
-    background-color: #666;
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 10px;
 }
 form button:hover{
-    background-color: #333;
+    background-color: #666;
 }
 .lista{
     padding: 10px;
@@ -193,7 +197,6 @@ ul{
         background-color: rgb(31, 116, 186);
         background-size:  390px;
         background-repeat: no-repeat;
-        color: #fff;
     }
     main{
         margin: 0;
