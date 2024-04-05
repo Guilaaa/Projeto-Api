@@ -5,7 +5,7 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;   
 }
 body{
-    background: rgb(175,179,183);
+    background: rgb(31, 116, 186)
 }
 main{
     width: 960px;
@@ -62,12 +62,11 @@ div.item{
     text-align: center ;
     padding: 10px;
     width: 200px;
-    border: 2px solid #666;
+    border: 2px solid rgb(255, 254, 254);
     margin: 5px;
 }
 div.item:hover{
-    background-color: #666;
-    color: #fff;
+    background-color: rgb(255, 254, 254);
     cursor: pointer;
 }
 div.item img{
@@ -160,7 +159,7 @@ ul{
 /*responsividade*/
 @media (max-width: 390px) {
     body{
-        background-color: rgb(175,179,183);
+        background-color: rgb(31, 116, 186);
         background-size:  390px;
         background-repeat: no-repeat;
         color: #fff;
@@ -189,6 +188,38 @@ ul{
         max-width: 70%;
     }
 }
+@media (min-width: 391px) and (max-width: 480px) {
+    body{
+        background-color: rgb(31, 116, 186);
+        background-size:  390px;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+    main{
+        margin: 0;
+        padding: 0;
+        max-width: 390px;
+    }
+    header{
+        max-width: 390px;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    nav, ul, li{
+        max-width: 80%;
+        justify-self: flex-end;
+        padding: 0;
+    }
+    form{
+        width: 250px;
+        margin: 1px;
+    }
+    form input{
+        max-width: 70%;
+    }
+}
+
 @media (min-width: 481px)and (max-width: 768px) {
     
     main{
@@ -198,6 +229,8 @@ ul{
     }
     header{
         max-width: 768px;
+        align-items: center;
+        justify-content: center;
     }
     nav, ul, li{
         max-width: 100%;
